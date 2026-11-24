@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Up — GOTOU TOP UP</title>
+<meta name="description" content="Top up your favorite game instantly with GOTOU TOP UP. Choose a package, enter your game ID and complete payment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/banner.jpg">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left"><span class="dot"></span> Secure checkout — instant delivery after payment</div>
+    <div class="tb-right">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#support">Support</a>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo" aria-label="GOTOU TOP UP home">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4M8 9v4"/><circle cx="16" cy="10" r="1"/><circle cx="18.5" cy="12.5" r="1"/><path d="M17.3 6H6.7a4.7 4.7 0 0 0-4.6 3.8l-1 6A3 3 0 0 0 6.6 19c1 0 1.8-.6 2.3-1.4l.8-1.3h5.6l.8 1.3c.5.8 1.3 1.4 2.3 1.4a3 3 0 0 0 5.5-3.2l-1-6A4.7 4.7 0 0 0 17.3 6Z"/></svg>
+      </span>
+      <span class="logo-text"><b>GOTOU</b><span>TOP UP</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#games" class="active">Games</a>
+      <a href="index.html#how">How It Works</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#support">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="text" id="gameSearch" placeholder="Search games..." aria-label="Search games">
+      </label>
+      <a href="index.html#support" class="btn-login">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Login</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Game hero -->
+<section class="game-hero">
+  <div class="game-hero-bg"><img id="heroBg" src="assets/freefire.jpg" alt=""></div>
+  <div class="wrap">
+    <div class="game-hero-inner">
+      <div class="game-cover"><img id="gameCover" src="assets/freefire.jpg" alt="Game cover"></div>
+      <div class="game-hero-info">
+        <div class="crumbs"><a href="index.html">Home</a> <span>/</span> <a href="index.html#games">Games</a> <span>/</span> <span id="crumbGame">Free Fire</span></div>
+        <h1 id="gameName">Free Fire</h1>
+        <div class="sub">
+          <span id="gameTagline">Official Free Fire Diamond Top-Up Store</span>
+          <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m20 6-11 11-5-5"/></svg> Official Store</span>
+        </div>
+        <div class="game-tabs">
+          <button class="game-tab active" data-tab="topup">Top Up</button>
+          <button class="game-tab" data-tab="gift">Gift Card</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="wrap">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg> Instant Delivery</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg> 100% Secure Payment</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 24/7 Support</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Money Back Guarantee</span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="topup-layout">
+    <!-- LEFT -->
+    <div>
+      <section class="panel">
+        <div class="panel-head"><span class="n">1</span><h2>Account Information</h2></div>
+        <div class="field">
+          <label for="gameId" id="idLabel">Player ID <span class="req">*</span></label>
+          <input class="input" id="gameId" type="text" placeholder="Enter your Player ID" autocomplete="off">
+          <div class="field-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+            <span id="idHint">Find your Player ID in your in-game profile.</span>
+          </div>
+        </div>
+        <div class="field" id="extraFieldWrap" style="display:none">
+          <label for="extraField" id="extraLabel">Zone ID <span class="req">*</span></label>
+          <input class="input" id="extraField" type="text" placeholder="">
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><span class="n">2</span><h2 id="pkgTitle">Saving Packages</h2></div>
+        <div class="pkg-head">
+          <h3 id="pkgSubtitle">Select a top-up package</h3>
+          <span class="game-currency" id="pkgCurrency">Diamonds</span>
+        </div>
+        <div class="pkg-grid" id="pkgGrid"></div>
+        <p class="empty-note" id="pkgEmpty" style="display:none">No packages available in this category yet.</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><span class="n">i</span><h2>About This Game</h2></div>
+        <p style="color:var(--muted);font-size:13.5px;line-height:1.75" id="gameDesc">Get ready for intense battles!</p>
+        <div class="mission-list" style="margin-top:18px">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m20 6-11 11-5-5"/></svg> Instant credit</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m20 6-11 11-5-5"/></svg> No login required</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m20 6-11 11-5-5"/></svg> Safe &amp; legit</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- RIGHT -->
+    <aside class="summary">
+      <section class="panel">
+        <div class="panel-head"><span class="n">3</span><h2>Payment Method</h2></div>
+        <div class="pay-list" id="payList">
+          <div class="pay-opt selected" data-pay="Credit Card">
+            <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+            <span class="p-tx"><b>Credit Card</b><small>Visa, Mastercard, JCB</small></span>
+            <span class="radio"></span>
+          </div>
+          <div class="pay-opt" data-pay="ABA KHQR">
+            <span class="p-ic" style="color:#3fa9f5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM19 19h2v2h-2z"/></svg></span>
+            <span class="p-tx"><b>ABA KHQR</b><small>Scan with any banking app</small></span>
+            <span class="radio"></span>
+          </div>
+          <div class="pay-opt" data-pay="PayPal">
+            <span class="p-ic" style="color:#ffb01f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M7 21 9 3h6a4 4 0 0 1 0 8H9"/><path d="M10 21l1.5-8"/></svg></span>
+            <span class="p-tx"><b>PayPal</b><small>Pay with your wallet balance</small></span>
+            <span class="radio"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><span class="n">4</span><h2>Order Summary</h2></div>
+        <div class="sum-row"><span>Item</span><b id="sumItem">—</b></div>
+        <div class="sum-row"><span>Game ID</span><b id="sumId">—</b></div>
+        <div class="sum-row"><span>Payment</span><b id="sumPay">Credit Card</b></div>
+        <div class="sum-divider"></div>
+        <label style="font-size:12.5px;font-weight:600;color:var(--muted);display:block;margin-bottom:7px">Coupon code</label>
+        <div class="coupon">
+          <input class="input" id="coupon" type="text" placeholder="Enter coupon code">
+          <button id="applyCoupon">Apply</button>
+        </div>
+        <div class="sum-row" id="discountRow" style="display:none"><span>Discount</span><b id="sumDiscount" style="color:var(--green)">−$0.00</b></div>
+        <div class="sum-divider"></div>
+        <div class="total-row"><span>Total</span><b id="sumTotal">$0.00</b></div>
+        <button class="btn btn-primary btn-block" id="payNow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Pay Now
+        </button>
+        <div class="secure-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg> 256-bit SSL secured checkout</div>
+        <p class="terms">By clicking “Pay Now”, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Refund Policy</a>.</p>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4M8 9v4"/><circle cx="16" cy="10" r="1"/><circle cx="18.5" cy="12.5" r="1"/><path d="M17.3 6H6.7a4.7 4.7 0 0 0-4.6 3.8l-1 6A3 3 0 0 0 6.6 19c1 0 1.8-.6 2.3-1.4l.8-1.3h5.6l.8 1.3c.5.8 1.3 1.4 2.3 1.4a3 3 0 0 0 5.5-3.2l-1-6A4.7 4.7 0 0 0 17.3 6Z"/></svg>
+          </span>
+          <span class="logo-text"><b>GOTOU</b><span>TOP UP</span></span>
+        </a>
+        <p>Your game. Your choice. Your GOTOU. Top up easy, play happy, and game beyond limits with us.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Games</h4>
+        <a href="game.html?game=freefire">Free Fire</a>
+        <a href="game.html?game=pubg">PUBG Mobile</a>
+        <a href="game.html?game=mlbb">Mobile Legends</a>
+        <a href="game.html?game=roblox">Roblox</a>
+        <a href="game.html?game=genshin">Genshin Impact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="index.html#why">Why Choose Us</a>
+        <a href="index.html#how">How It Works</a>
+        <a href="index.html#support">Contact Support</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Refund Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <p>Orders, payments &amp; general inquiries</p>
+        <a href="mailto:support@gotoutopup.com">support@gotoutopup.com</a>
+        <p style="margin-top:14px;font-size:12px;color:var(--muted-2)">Support hours: 24 hours a day, 7 days a week.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> GOTOU TOP UP. All rights reserved. Not affiliated with game publishers.</span>
+      <div class="pay">
+        <span class="pay-chip">VISA</span>
+        <span class="pay-chip">MASTERCARD</span>
+        <span class="pay-chip">ABA KHQR</span>
+        <span class="pay-chip">PAYPAL</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Confirmation modal -->
+<div class="modal-back" id="modal">
+  <div class="modal">
+    <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></div>
+    <h3>Order Confirmed</h3>
+    <p>Your top-up is being processed. It will be credited to your account shortly.</p>
+    <div class="receipt" id="receipt"></div>
+    <button class="btn btn-primary" id="modalClose">Done</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m20 6-11 11-5-5"/></svg><span id="toastText">Added</span></div>
+
+<script src="js/games.js"></script>
+<script src="js/main.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
